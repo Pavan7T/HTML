@@ -4,8 +4,89 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>NTech</h1>
+    <h3>Start or complete your application</h3>
+
+    <h1>Registration Form</h1>
+    <form >
+      <label >First Name:</label required>
+      <input type="text" placeholder="Enter first name" /> <br> <br>
+      
+      <label >Last Name:</label>
+      <input type="text" placeholder="Enter last name" /><br> <br>
+        
+      <label >Email:</label>
+      <input type="email" placeholder="Enter your email" required><br> <br>
+       
+      <label >Password:</label>
+      <input type="password" placeholder="Enter password" /><br> <br>
+      
+      <label >Mobile Number:</label>
+      <input type="number" placeholder="Enter mobile number" /><br> <br>
+      
+      <label >City Name:</label>
+      <input type="text" placeholder="Enter city" /><br> <br>
+
+      <label >Date of Birth:</label required>
+      <input type="date" placeholder="Enter your date of birth" /><br> <br>
+      
+      <label >Nationality:</label>
+      <select>
+        <option value="">Select your Nationality</option>
+        <option value="ind">IND</option>
+        <option value="usa">USA</option>
+        <option value="uk">UK</option>
+      </select><br> <br>
+
+      <label >Gender: </label>
+      <input type="radio" id="male" name="gender" value="male" required>
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female" required>
+      <label for="female">Female</label><br><br>
+      
+       <label>Skills: </label>
+       <input type="checkbox" id="html" name="skills" value="html">
+       <label>HTML</label>
+       <input type="checkbox" id="css" name="skills" value="css">    
+       <label >CSS</label>
+       <input type="checkbox" id="js" name="skills" value="js">  
+       <label >JavaScript</label><br><br>
+
+       <label >Qualification :</label>
+      <select>
+        <option value="">Select your Qualification</option>
+        <option value="btech">B.Tech</option>
+        <option value="mtech">M.Tech</option>
+        <option value="mba">MBA</option>
+      </select><br> <br>
+
+      <label >Experience:</label>
+      <input type="range" id="experience" name="experience" min="0" max="10" />   <label>10 years</label><br><br>  
+      
+      <label >Address:</label>
+      <textarea placeholder="Enter your address"></textarea><br><br>
+
+      <label >Upload Document:</label>
+      <input type="file" id="document" name="document" /><br><br>
+
+      <label>Favorite Colour:</label>
+      <input type="color"/><br><br>
+
+      <label>Website: </label>
+      <input type="link" required/><br><br>
+
+      <label>Preferred time:</label>
+      <input type="time" required/><br><br>
+
+
+      <input type="checkbox" id="terms" name="terms" required>
+      <label for="terms">I agree to the terms and conditions</label><br><br>
+
+      <button type="submit">Register</button>
+         <button type="reset">Clear</button>
+      
+    </form>
   </body>
 </html>
